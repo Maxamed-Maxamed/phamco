@@ -1,0 +1,442 @@
+/* Import Google Font (Roboto) - moved to top */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #eef4f7;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  padding-top: 70px; /* Add space for fixed nav */
+}
+
+/* Navigation Styles */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fixed-nav .menu {
+  padding: 1rem 2rem;
+}
+
+/* Updated Navigation Styles */
+.fixed-nav .ui.secondary.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.brand-container .logo {
+  width: 90px;
+  height: 100%;
+  margin-right: 1rem;
+  margin-right: 15px;
+}
+
+.nav-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-links .item {
+  margin-left: 2.5rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+.nav-links .item.active {
+  color: #204d74;
+  font-weight: 700;
+  border-bottom: 2px solid #2e6da4;
+}
+
+
+.fixed-nav .item:hover {
+  color: #204d74;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(46, 109, 164, 0.5), rgba(46, 109, 164, 0.5)), url('../assets/images/pharma-banner.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 1rem;
+  margin-top: -70px; /* Compensate for the navbar padding */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.hero a.ui.button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  background: #2e6da4;
+  color: #fff !important;
+  transition: background 0.3s ease;
+}
+
+.hero a.ui.button:hover {
+  background: #204d74;
+}
+
+/* Main Content */
+.main-content {
+  padding: 3rem 2rem;
+}
+
+/* Section Titles */
+.main-content h2, 
+section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #2e6da4;
+  border-bottom: 2px solid #2e6da4;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+/* Section Spacing */
+.welcome, .services, .products, .about, .products-page, .contact-page {
+  margin-bottom: 3rem;
+}
+
+/* Service Segments */
+.services .ui.raised.segment {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .ui.raised.segment:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.services .ui.raised.segment h3 {
+  color: #2e6da4;
+}
+
+/* Product Cards */
+.ui.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  background: #fff;
+  height: 100%;
+}
+
+.ui.card:hover {
+  transform: translateY(-5px);
+}
+
+.ui.card .image img {
+  object-fit: cover;
+  height: 220px;
+  width: 100%;
+}
+
+.ui.card .content {
+  padding: 1rem;
+
+  
+}
+
+.ui.card .header {
+  font-size: 1.25rem;
+  color: #2e6da4;
+  margin-bottom: 5px;
+  margin-bottom: 5rem;
+  
+}
+
+.ui.card .description {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: #f5f9fc;
+  padding: 3rem 0;
+  margin: 2rem 0;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonials .ui.card {
+  height: 100%;
+}
+
+.testimonials .description p {
+  font-style: italic;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 2rem 0;
+}
+
+.cta-section .ui.segment {
+  padding: 3rem;
+}
+
+.cta-section .ui.button.white {
+  background: white;
+  color: #2e6da4 !important;
+  margin-top: 1rem;
+}
+
+.cta-section .ui.button.white:hover {
+  background: #f5f5f5;
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+table.ui.celled.table {
+  margin: 0;
+  border-collapse: collapse;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+table.ui.celled.table th,
+table.ui.celled.table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #e0e0e0;
+}
+
+table.ui.celled.table th {
+  background: #2e6da4;
+  color: #fff;
+  font-weight: 500;
+}
+
+table.ui.celled.table tr:hover {
+  background-color: #f0f7ff;
+}
+
+table.ui.celled.table tr:nth-child(even) {
+  background: #f7f9fb;
+}
+
+table.ui.celled.table tfoot th {
+  background: #f5f5f5;
+  font-weight: normal;
+}
+
+/* Form Styles */
+.ui.form .field label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.ui.form input[type="text"],
+.ui.form input[type="email"],
+.ui.form textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.ui.form input[type="text"]:focus,
+.ui.form input[type="email"]:focus,
+.ui.form textarea:focus {
+  border-color: #2e6da4;
+  outline: none;
+}
+
+/* Footer Styles */
+.ui.inverted.footer.segment {
+  background: #2e6da4;
+  color: #dcdcdc;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: none;
+  margin-top: 2rem;
+}
+
+.footer .ui.inverted.header {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.footer .ui.inverted.link.list a.item {
+  color: #dcdcdc;
+  transition: color 0.2s ease;
+}
+
+.footer .ui.inverted.link.list a.item:hover {
+  color: #ffffff;
+}
+
+/* Research & Innovation Styles */
+.research-innovation .ui.segment {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-innovation .ui.segment:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.research-innovation .ui.list .item {
+  padding: 0.5rem 0;
+}
+
+.research-innovation .ui.list .header {
+  color: #2e6da4;
+  font-weight: 500;
+}
+
+/* Therapeutic Areas Styles */
+.therapeutic-area {
+  margin: 3rem 0;
+}
+
+.therapeutic-area h2 {
+  color: #2e6da4;
+  border-bottom: 2px solid #2e6da4;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.therapeutic-area h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #2e6da4;
+}
+
+.therapeutic-area .ui.bulleted.list .item {
+  line-height: 1.6;
+  padding: 0.25rem 0;
+}
+
+/* Innovation Pipeline Styles */
+.innovation-pipeline .ui.accordion {
+  margin: 2rem 0;
+}
+
+.innovation-pipeline .ui.accordion .title {
+  font-size: 1.1rem;
+  color: #2e6da4;
+}
+
+.innovation-pipeline .ui.accordion .content {
+  padding: 1rem 2rem;
+}
+
+.publications .ui.list .item {
+  padding: 1rem 0;
+}
+
+.publications .ui.list .header {
+  color: #2e6da4;
+  margin-bottom: 0.25rem;
+}
+
+.publications .ui.list .meta {
+  color: #777;
+  margin-bottom: 0.25rem;
+}
+
+/* Clinical Trials Styles */
+.clinical-trials .ui.message {
+  margin-top: 2rem;
+}
+
+.clinical-trials .ui.message .header {
+  color: #2e6da4;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .fixed-nav .menu {
+    padding: 0.5rem 1rem;
+  }
+  
+  .fixed-nav .item {
+    margin: 0 0.5rem;
+  }
+  
+  .main-content {
+    padding: 2rem 1rem;
+  }
+  
+  .ui.stackable.grid {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero a.ui.button {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .main-content h2, 
+  section h2 {
+    font-size: 1.75rem;
+  }
+}

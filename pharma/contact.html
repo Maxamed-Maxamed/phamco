@@ -1,0 +1,249 @@
+ma\contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - PharmaCo</title>
+  <meta name="description" content="Contact PharmaCo for inquiries about our pharmaceutical research, therapeutic areas, or partnership opportunities.">
+  <meta name="keywords" content="pharmaceutical contact, healthcare inquiry, research partnership, pharma contact, medical information">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Fixed Navigation Bar -->
+  <header class="fixed-nav">
+    <div class="ui container">
+      <div class="ui secondary menu">
+        <div class="brand-container">
+          <a href="index.html">
+            <img class="logo" src="../assets/images/logo.png" alt="PharmaCo Logo">
+          </a>
+          <div class="header">PharmaCo</div>
+        </div>
+        
+        <nav class="nav-links">
+          <a class="item" href="index.html">Home</a>
+          <a class="item" href="about.html">About Us</a>
+          <a class="item" href="therapeutic-areas.html">Therapeutic Areas</a>
+          <a class="item" href="research.html">Research & Innovation</a>
+          <a class="item active" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="ui container main-content">
+    <section class="contact-page">
+      <h1>Contact Us</h1>
+      <p>Have questions about our research, therapeutic areas, or partnership opportunities? Our team is here to help.</p>
+      
+      <div class="ui stackable two column grid">
+        <div class="column">
+          <div class="ui segment">
+            <h2>Send us a Message</h2>
+            <form class="ui form">
+              <div class="field required">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Your Full Name" required>
+              </div>
+              <div class="field required">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+              </div>
+              <!-- Organization field removed as requested -->
+              <div class="field required">
+                <label>Subject</label>
+                <select class="ui dropdown" name="subject" required>
+                  <option value="">Select a Subject</option>
+                  <option value="research">Research Information</option>
+                  <option value="therapeutic">Therapeutic Areas</option>
+                  <option value="partnership">Partnership Opportunities</option>
+                  <option value="career">Career Inquiries</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="field required">
+                <label>Message</label>
+                <textarea rows="5" placeholder="How can we help you?" required></textarea>
+              </div>
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="privacy" required>
+                  <label>I have read and agree to the <a href="privacy.html">Privacy Policy</a></label>
+                </div>
+              </div>
+              <button class="ui button primary" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="ui segment">
+            <h2>Contact Information</h2>
+            <div class="ui relaxed divided list">
+              <div class="item">
+                <i class="large building icon"></i>
+                <div class="content">
+                  <div class="header">Global Headquarters</div>
+                  <div class="description">
+                    123 Pharma Boulevard<br>
+                    Cambridge, MA 02142<br>
+                    United States
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="large phone icon"></i>
+                <div class="content">
+                  <div class="header">Phone</div>
+                  <div class="description">
+                    <p>General Inquiries: +1 (555) 123-4567</p>
+                    <p>Medical Information: +1 (555) 987-6543</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="large mail icon"></i>
+                <div class="content">
+                  <div class="header">Email</div>
+                  <div class="description">
+                    <p>General Inquiries: <a href="mailto:info@pharmaco.com">info@pharmaco.com</a></p>
+                    <p>Media Relations: <a href="mailto:media@pharmaco.com">media@pharmaco.com</a></p>
+                    <p>Investor Relations: <a href="mailto:investors@pharmaco.com">investors@pharmaco.com</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <i class="large clock icon"></i>
+                <div class="content">
+                  <div class="header">Business Hours</div>
+                  <div class="description">
+                    Monday - Friday: 9:00 AM - 5:00 PM (EST)<br>
+                    Closed on weekends and public holidays
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="ui segment">
+            <h2>Connect With Us</h2>
+            <div class="ui horizontal list social-icons">
+              <div class="item">
+                <a href="#" aria-label="LinkedIn"><i class="huge linkedin icon" style="color: #2e6da4;"></i></a>
+              </div>
+              <div class="item">
+                <a href="#" aria-label="Twitter"><i class="huge twitter icon" style="color: #2e6da4;"></i></a>
+              </div>
+              <div class="item">
+                <a href="#" aria-label="Facebook"><i class="huge facebook f icon" style="color: #2e6da4;"></i></a>
+              </div>
+              <div class="item">
+                <a href="#" aria-label="YouTube"><i class="huge youtube icon" style="color: #2e6da4;"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Global Offices Section -->
+      <section class="global-offices">
+        <h2>Global Offices</h2>
+        <div class="ui four cards">
+          <div class="card">
+            <div class="content">
+              <div class="header">Europe</div>
+              <div class="meta">Regional Headquarters</div>
+              <div class="description">
+                <p>Pharma Platz 8<br>
+                8008 Zurich<br>
+                Switzerland</p>
+                <p>Tel: +41 44 123 4567</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Asia-Pacific</div>
+              <div class="meta">Regional Headquarters</div>
+              <div class="description">
+                <p>88 Medical Park Tower<br>
+                Singapore 138668<br>
+                Singapore</p>
+                <p>Tel: +65 6123 4567</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">United Kingdom</div>
+              <div class="meta">Regional Office</div>
+              <div class="description">
+                <p>45 Pharma Square<br>
+                London W1T 4JG<br>
+                United Kingdom</p>
+                <p>Tel: +44 20 7123 4567</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <div class="header">Latin America</div>
+              <div class="meta">Regional Office</div>
+              <div class="description">
+                <p>Av. Paulista, 1000<br>
+                São Paulo - SP, 01310-100<br>
+                Brazil</p>
+                <p>Tel: +55 11 2123 4567</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Map Section removed as requested -->
+      <!-- FAQ Section removed as requested -->
+      
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="ui inverted vertical footer segment">
+    <div class="ui container footer">
+      <div class="ui inverted divided grid">
+        <div class="four wide column">
+          <h4 class="ui inverted header">PharmaCo</h4>
+          <div class="ui inverted link list">
+            <a class="item" href="about.html">About Us</a>
+            <a class="item" href="therapeutic-areas.html">Therapeutic Areas</a>
+            <a class="item" href="research.html">Research & Innovation</a>
+            <a class="item" href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="four wide column">
+          <h4 class="ui inverted header">Legal</h4>
+          <div class="ui inverted link list">
+            <a class="item" href="privacy.html">Privacy Policy</a>
+            <a class="item" href="terms.html">Terms of Use</a>
+          </div>
+        </div>
+        <div class="eight wide column">
+          <p>&copy; 2025 PharmaCo. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Semantic UI JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.ui.dropdown').dropdown();
+      $('.ui.checkbox').checkbox();
+    });
+  </script>
+</body>
+</html>
