@@ -17,6 +17,64 @@ body {
   padding-top: 70px; /* Add space for fixed nav */
 }
 
+/* Link styles - add visited state */
+a:link {
+  color: #2e6da4;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:visited {
+  color: #6b4c9a; /* Purple-blue color for visited links */
+}
+
+a:hover, a:focus {
+  color: #204d74;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #1a3f5c;
+}
+
+/* Navigation link styles */
+.nav-links a.item:link {
+  color: #333333;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-links a.item:visited {
+  color: #505050; /* Darker gray for visited nav links */
+}
+
+.nav-links a.item:hover,
+.nav-links a.item:focus {
+  color: #2e6da4;
+  text-decoration: none;
+  background-color: rgba(46, 109, 164, 0.1);
+}
+
+.nav-links a.item.active,
+.nav-links a.item.active:visited {
+  color: #2e6da4;
+  font-weight: 500;
+}
+
+/* Footer link styles */
+footer a:link {
+  color: #ddd;
+}
+
+footer a:visited {
+  color: #b8a9d3; /* Lighter purple for visited footer links */
+}
+
+footer a:hover,
+footer a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
 /* Navigation Styles */
 .fixed-nav {
   position: fixed;
